@@ -8,6 +8,16 @@
 	<script>
 	$(function(){
 		// All jQuery code goes here
+        
+        $('.navigation > li').hover(function(){
+            //This code executes when the mouse pointer is over the list item... hooray
+            
+            $(this).addClass('openSesame');
+            
+        }, function(){
+                //this code executes twhenthe mount pointer leave the list item                    
+                                    
+            $(this).removeClass('openSesame');                        });
 
 	})
 	</script>
@@ -15,7 +25,7 @@
 <body>
 	<ul class="navigation">
 		<li>About Us</li>
-		<li>Services</li>
+		<li >Services</li>
 		<li>Catalog</li>
 		<li>Blog</li>
 		<li>Contact</li>

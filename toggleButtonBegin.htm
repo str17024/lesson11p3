@@ -7,50 +7,15 @@
 	<link rel="stylesheet" href="css/toggleBtn.css">
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script>
-		$(function () {
+		$(function (){
 			// jQuery Code goes here
             
             
-            var inputFields = $('input[type="text"]')
-            
-            // -- older code --if($('input[type="text"]').css('background-color') === 'rgb(255, 0, 0)') {
-                //setbackground color to white
-               // $('input[type="text"]').css('background-color','rgb(255, 255, 255)');
-               //  }
-                //else {
-                    //set background color to red maybe
-                   // $('input[type="text"]').css('background-color', 'rgb(255, 0, 0)');
-               // }
-            if(inputFields.css('background-color') === 'rgb(255, 0, 0)') {
-                //setbackground color to white for second time
-                inputFields.css('background-color','rgb(255, 255, 255)');
-                 }
-                else {
-                    //set background color to red maybe
-                    inputFields.css('background-color', 'rgb(255, 0, 0)');
-                }    
-             
-            
-        }
-            
-            var nameVal = $('input[name="nameVal"]');
-        
-        function FillEmpty(){
-            
-            if( nameVal.val() == ''){
-                nameVal.val( 'John Doeth');
-                
-            }
-            
-        }
-            
-            
-            
-            $('#ReqAQuoteBtn').click( FillEmpty );
-            
-            $('#ReqAQuoteBtn').click( toggleStyle );
-
-		})
+           $('.toggleBtn').click( function(){
+             $(this).toggleClass("toggleOn");
+           } );
+        })
+		
 	</script>
 </head>
 
